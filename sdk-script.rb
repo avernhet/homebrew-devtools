@@ -12,7 +12,7 @@ class SdkScript <Formula
   def stage(target=nil, &block)
     bin.mkpath
     path = bin+"sdk"
-    path.write <<~EOS.undent
+    path.write <<~EOS
       #!/bin/sh
       
       usage()
