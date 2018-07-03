@@ -12,7 +12,7 @@ class SbxScript <Formula
   def stage(target=nil, &block)
     bin.mkpath
     path = bin+"sbx"
-    path.write <<~EOS.undent
+    path.write <<~EOS
       #!/bin/sh
       
       SANDBOXES="sandboxes"
